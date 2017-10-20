@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+</head>
+<body>
+    
+    <div id="content"></div>
+
+    <script type="text/babel">
+        var Calculator = React.createClass({
+            render: function() {
+                return (
+                    <div className="calculator">
+                        <div className="calculator-numbers">
+                            <input type="number" />
+                            <input type="number" />
+                        </div>
+                        <div className="calculator-operators">
+                            <button>+</button>
+                            <button>-</button>
+                            <button>*</button>
+                            <button>/</button>                            
+                        </div>
+                        <div className="calculator-result"></div>                        
+                    </div>
+                );
+            }
+        });
+
+        ReactDOM.render(
+            <Calculator />,
+            document.getElementById("content")
+        );
+    </script>
+
+</body>
+</html>

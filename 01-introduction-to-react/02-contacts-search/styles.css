@@ -1,0 +1,53 @@
+
+.contacts {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.contacts .search-field {
+    padding: 10px 22px;
+    outline: none;
+    border: 1px solid #888;
+    width: 100%;
+    box-sizing: border-box;    
+}
+
+.contacts-list { 
+    margin: 15px 0;
+    padding: 0;
+}
+
+.contacts-list li {
+    list-style-type: none;
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px dotted #555;
+}
+
+.contact-image {
+    width: 65px;
+    height: 65px;
+    border-radius: 10em;
+    border: 2px solid #333;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0 0 15px;
+}
+
+.contact-name {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.contact-phone {
+    margin-top: 5px;
+    color: #888;
+}
+
+

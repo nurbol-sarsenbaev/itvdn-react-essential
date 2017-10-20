@@ -1,0 +1,41 @@
+
+.calculator {
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #aaa;
+}
+
+.calculator-numbers input {
+    width: calc(50% - 5px);
+    box-sizing: border-box;
+    padding: 5px 10px;
+    outline: none;
+    border: 1px solid #888;
+}
+
+.calculator-numbers input:first-child {
+    margin: 0 10px 0 0;
+}
+
+.calculator-operators {
+    display: flex;
+    margin: 10px 0;
+}
+
+.calculator-operators button {
+    flex: 1;
+    margin: 0 10px 0 0;
+    height: 30px;
+}
+
+.calculator-operators button:last-child {
+    margin: 0;
+}
+
+.calculator-result {
+    border: 1px solid #888;
+    height: 25px;
+}
+
